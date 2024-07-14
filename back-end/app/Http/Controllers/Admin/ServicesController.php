@@ -35,7 +35,6 @@ class ServicesController extends Controller
         $service->description = $request->input('description');
         $service->image = $imageName;
         $service->save();
-        Session::flash('success', 'Service ajouté avec succès');
         Session::flash('statuscode', 'success');
         return redirect('/liste-Service')->with('status',' Votre service a été enregistrer avec succès');// Redirect to list service route or view
 

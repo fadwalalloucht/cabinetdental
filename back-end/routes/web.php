@@ -31,6 +31,16 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
     Route::get('/service-edit/{id}', 'Admin\ServicesController@editService');
     Route::put('/updateService/{id}', 'Admin\ServicesController@updateService');
     Route::delete('/deleteservice/{id}', 'Admin\ServicesController@deleteservice');
+    /** For Galerie */
+    Route::get('/show', 'Admin\VideosController@showvideo');
+    Route::post('/addfile', 'Admin\VideosController@addfile');
+    Route::get('/liste-Galeries ', 'Admin\VideosController@listeGaleries');
+    Route::delete('/delte-galerie/{id}', 'Admin\VideosController@deleteGalerie');
+    Route::get('/galerie-edit/{id}', 'Admin\VideosController@editGalerie');
+    Route::put('/updategalerie/{id}', 'Admin\VideosController@updateGalerie');
+
+
+
 
 
 
