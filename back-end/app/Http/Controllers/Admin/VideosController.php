@@ -118,4 +118,5 @@ class VideosController extends Controller
         return view('admin.editGalerie')->with('file', $file);
     }
 
+    
 }

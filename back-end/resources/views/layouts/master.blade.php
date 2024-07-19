@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>@yield('title')</title>
   <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport" />
-  <link rel="icon" href="{{ asset('assets/img/kaiadmin/favicon.ico')}}" type="image/x-icon" />
+  <link rel="icon" href="{{ asset('assets/img/size.jpg')}}" type="image/x-icon" />
 
   <!-- Fonts and icons -->
   <script src="{{ asset('assets/js/plugin/webfont/webfont.min.js') }}"></script>
@@ -45,7 +45,8 @@
         <!-- Logo Header -->
         <div class="logo-header" data-background-color="dark">
           <a href="index.html" class="logo">
-            <img src="assets/img/kaiadmin/logo_light.svg" alt="navbar brand" class="navbar-brand" height="20" />
+            <img src="assets/img/logocabinet.png" alt="navbar brand" class="navbar-brand" height="20" />
+            <span style="font-size: 16px; font-weight: bold; color:white;margin-left: 11%">Admin</span>
           </a>
           <div class="nav-toggle">
             <button class="btn btn-toggle toggle-sidebar">
@@ -65,7 +66,7 @@
         <div class="sidebar-content">
           <ul class="nav nav-secondary">
             <li class="nav-item active">
-              <a data-bs-toggle="collapse" href="/dashboard" class="collapsed" aria-expanded="false">
+              <a  href="/dashboard" class="collapsed" aria-expanded="false">
                 <i class="fas fa-home"></i>
                 <p>Dashboard</p>
               </a>
@@ -127,8 +128,13 @@
               <div class="collapse" id="forms">
                 <ul class="nav nav-collapse">
                   <li>
-                    <a href="forms/forms.html">
-                      <span class="sub-item"></span>
+                    <a href="/showHoraiare">
+                      <span class="sub-item">Ajouter horaire</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/allshifts">
+                      <span class="sub-item">Liste horaire</span>
                     </a>
                   </li>
                 </ul>
@@ -143,13 +149,8 @@
               <div class="collapse" id="tables">
                 <ul class="nav nav-collapse">
                   <li>
-                    <a href="tables/tables.html">
-                      <span class="sub-item">Basic Table</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="tables/datatables.html">
-                      <span class="sub-item">Datatables</span>
+                    <a href="">
+                      <span class="sub-item">Liste horaires</span>
                     </a>
                   </li>
                 </ul>
@@ -256,27 +257,11 @@
     <footer class="footer">
       <div class="container-fluid d-flex justify-content-between">
         <nav class="pull-left">
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link" href="http://www.themekita.com">
-                ThemeKita
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"> Help </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"> Licenses </a>
-            </li>
-          </ul>
+          
         </nav>
         <div class="copyright">
           2024, made with <i class="fa fa-heart heart text-danger"></i> by
-          <a href="http://www.themekita.com">ThemeKita</a>
-        </div>
-        <div>
-          Distributed by
-          <a target="_blank" href="https://themewagon.com/">ThemeWagon</a>.
+          <a href="">@FadwaLalloucht</a>
         </div>
       </div>
     </footer>
@@ -400,7 +385,7 @@
   {{-- sweeatalert --}}
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+  
   <script>
     $(document).ready(function () {
       $("#basic-datatables").DataTable({});
