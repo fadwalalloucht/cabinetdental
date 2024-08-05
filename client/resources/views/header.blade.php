@@ -23,7 +23,8 @@
 			CSS
 			============================================= -->
 	<link rel="stylesheet" href="css/linearicons.css">
-	{{-- <link rel="stylesheet" href="css/font-awesome.min.css"> --}}
+	{{--
+	<link rel="stylesheet" href="css/font-awesome.min.css"> --}}
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/nice-select.css">
@@ -32,12 +33,91 @@
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/main.css">
 
+	<style>
+		 body {
+            margin: 0;
+            font-family: Poppins;
+        }
+
+        .info-bar {
+            background-color: #4A919E;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            font-size: 14px;
+				font-family: "Yeseva One";
+        }
+
+        .info-bar .left-section,
+        .info-bar .right-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .info-bar .left-section i,
+        .info-bar .right-section i {
+            margin-right: 8px;
+        }
+
+        .info-bar .right-section a {
+            color: #d4af37;
+            margin-left: 15px;
+            text-decoration: none;
+            font-size: 28px;
+        }
+
+        .info-bar .right-section a:hover {
+            color: #fff;
+        }
+
+        .social-icon,
+        .icons {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            /* width: 35px; */
+            /* height: 35px; */
+            border-radius: 50%;
+            background-color: transparent;
+            color: #000;
+				/* border-width: 1px 1px 1px 1px */
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s, border 0.3s;
+            border: 2px solid #d4af37; /* Yellow border
+            font-size: 24px; Adjusted to fit icon size */
+        }
+        .social-icon:hover,
+        .icons:hover {
+            background-color: #d4af37; /* Yellow background on hover */
+            color: #000; /* Icon color on hover */
+        }
+    </style>
+	</style>
+
 </head>
 
 
 <body>
 	<header id="header" id="home">
-		
+
+		<div class="info-bar">
+			<div class="left-section">
+				<span>Vous avez des questions ?</span>
+				<i class="fa fa-phone" style="margin-left: 20px;"></i>
+				<span>05.39.35.67.84</span>
+				<i class="lnr lnr-map-marker" style="margin-left: 20px;"></i>
+				<span> Plaza Toro Rue Regayae Quartier Drawa (en face de la pharmacie Place des Arènes), Tanger</span>
+			</div>
+			<div class="right-section">
+				<a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+				<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-f"></i></a>
+				<a href="https://www.linkedin.com" target="_blank"><i class="fa fa-google"></i></a>
+			</div>
+		</div>
+
+
 		<div class="header-top">
 			<div class="container">
 				<div class="row align-items-center">
@@ -47,14 +127,11 @@
 
 					</div>
 
-					
-					<div class="col-lg-6 col-sm-6 col-8 header-top-right no-padding">
-						<a class="btns" href="https://wa.me/212666600755"><i class="fa fa-phone"style="margin-right: 5px;"></i>0666600755</a>
-						<a class="btns"><i class="fa fa-phone" style="margin-right: 5px;"></i>0539356784</a>
-						<a class="btns" href="mailto:support@colorlib.com"><i class="fa fa-envelope" style="margin-right: 5px;"></i>support@colorlib.com</a>
-							<a class="fa fa-instagram social-icon" href="#"></a>
-							<a class="fa fa-facebook social-icon" href="#"></a>
-							<a class="fa fa-google social-icon" href="#"></a>
+
+					<div class="col-lg-6 col-sm-6 col-8 header-top-right">
+						<a class="social-icon fa fa-instagram" href="#" style="font-size: 24px;"></a>
+						<a class="social-icon fa fa-facebook" href="#" style="font-size: 24px;"></a>
+						<a class="social-icon fa fa-google" href="#" style="font-size: 24px;"></a>
 						<a class="icons" href="https://wa.me/212666600755">
 							 <span class="lnr lnr-phone-handset"></span>
 						</a>
@@ -62,12 +139,18 @@
 							 <span class="lnr lnr-envelope"></span>
 						</a>
 				  </div>
-				 
+			 </div>
+		</div>
+				  
+
 				</div>
 			</div>
 		</div>
-		
-		  
+
+
+
+
+
 
 		<div class="container main-menu">
 			<div class="row align-items-center justify-content-between d-flex">

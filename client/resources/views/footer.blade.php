@@ -63,7 +63,10 @@
 							<h3><span class="lnr lnr-phone" style="margin-right: 5px;"></span>066-660-0755</h3>
 								<h3><span class="lnr lnr-phone-handset" style="margin-right: 5px;"></span>0539356784</h3>
 							</div>
-						</div>							
+						</div>	
+						
+						
+						
 						<div class="col-lg-6  col-md-12">
 						</div>					
 					</div>

@@ -5,6 +5,40 @@
 	@include('header')
 </head>
 
+
+<style>
+	.h6 {
+		background-position: center center;
+		text-align: left;
+		font-size: 3.5em;
+		line-height: 1.3em;
+		font-weight: 700;
+		letter-spacing: 1px;
+		text-transform: none;
+	}
+	.button_size_2{
+	 background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border-style: solid;
+    border-width: 3px 3px 3px 3px;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: Poppins;
+    padding-right: 3%;
+    padding-bottom: 2%;
+    padding-left: 3%;
+    padding-top: 2%;
+    border-color: white;
+    border-radius: 30px 30px 30px 30px;
+	}
+	.button_size_2:hover {
+    background-color: #4A919E; /* Background color on hover */
+    color: #FFFFFF; /* Text color on hover */
+    /* border-color:; Keep border color same as background */
+}
+</style>
+
 <body>
 	<!-- start banner Area -->
 	<section class="banner-area relative" id="home">
@@ -21,7 +55,9 @@
 						Un dentiste est le héros méconnu qui sauve le monde du méchant de la carie dentaire, une dent à la
 						fois.
 					</p>
+					<br>
 					{{-- <a href="#" class="primary-btn header-btn text-uppercase mt-10">Get Started</a> --}}
+					<a class="button button_size_2" href="" title=""><span class="button_label">Réservez maintenant</span></a>
 				</div>
 			</div>
 		</div>
@@ -49,11 +85,12 @@
 							<li><span>:</span> 09h00 à 14h00</li>
 							<li><span>:</span> fermé</li>
 						</ul>
-						
+
 
 					</div>
 					<br>
-				<span style=" font-weight: bold;">(En cas d'urgence appeler moi dans ce numéro <a class="btns" href="https://wa.me/212666600755">0666600755</a>)</span>
+					<span style=" font-weight: bold;">(En cas d'urgence appeler moi dans ce numéro <a class="btns"
+							href="https://wa.me/212666600755">0666600755</a>)</span>
 
 				</div>
 			</div>
@@ -308,6 +345,42 @@
 				</div>
 			</div>
 		</div>
+		<a class="float-button" href="https://wa.me/212666600755" target="_blank">
+			<i class="fa fa-whatsapp"></i>
+		</a>
+		<style>
+			.float-button {
+				position: fixed;
+				bottom: 20px;
+				right: 20px;
+				background-color: #d4af37;
+				color: white;
+				border: none;
+				border-radius: 50%;
+				width: 60px;
+				height: 60px;
+				font-size: 24px;
+				/* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); */
+				cursor: pointer;
+				transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-decoration: none;
+				/* Ajoute cette ligne pour supprimer le soulignement */
+			}
+
+			.float-button:hover {
+				background-color: #d4af37;
+				transform: scale(1.1);
+				/* box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4); */
+			}
+
+			.float-button i {
+				font-size: 28px;
+				/* Ajuster la taille de l'icône */
+			}
+		</style>
 	</section>
 	<!-- End appoinment Area -->
 	<br>
