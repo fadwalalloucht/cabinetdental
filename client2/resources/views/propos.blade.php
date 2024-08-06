@@ -119,20 +119,20 @@
                   Radieux</h3>
                <p>Réservez dès maintenant pour un sourire éclatant.
                   Notre équipe experte vous attend.</p>
-               <a href="#rdv" class="btn btn-btn">Prendre Rendez-vous</a>
+               <a href="/contact" class="btn btn-btn">Prendre Rendez-vous</a>
             </div>
             <div class="appointment-option">
                <i class="fas fa-stethoscope icon"></i>
                <h3>Réponses à Toutes Vos Questions</h3>
                <p>Notre équipe est là pour vous aider. Posez-nous vos questions.</p>
-               <a href="#consultation" class="btn btn-btn">Poser une Question</a>
+               <a href="https://wa.me/1234567890" class="btn btn-btn">Poser une Question</a>
             </div>
             <div class="appointment-option">
                <i class="fas fa-map-marker-alt icon"></i>
                <h3>Emplacement</h3>
                <p>Trouvez facilement notre centre dentaire.
                   Votre sourire est plus proche que vous ne le pensez.</p>
-               <a href="#emplacement" class="btn btn-btn">Trouver Notre Emplacement</a>
+               <a href="https://www.google.com/maps/place/Centre+Dentaire+Dr.+Asmae+El+Bakkali+Ettaheri/@35.7607687,-5.7955742,15z/data=!4m6!3m5!1s0xd0b812292c7993b:0xdf45bc0d9a4a0f20!8m2!3d35.7607687!4d-5.7955742!16s%2Fg%2F11tt2k3dh2?hl=fr-ma&entry=ttu" class="btn btn-btn">Trouver Notre Emplacement</a>
             </div>
          </div>
       </div>

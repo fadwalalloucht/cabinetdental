@@ -457,20 +457,9 @@
 
 
 
-	<section class="reviews-section" style="background-color: #D1D8C5; padding: 20px;">
-		<h2 class="reviews-title" style="color: #000; text-align: center; margin-bottom: 20px;">Voici quelques avis de nos
+	<section class="reviews-section">
+		<h2 class="reviews-title">Voici quelques avis de nos
 			clients :</h2>
-
-		<div class="reviews-cards">
-
-			<div class="card-image"
-				style="flex: 0 0 30%; background-image: url('path/to/your/image.jpg'); background-size: cover; background-position: center; height: 100%; border-radius: 8px 0 0 8px;">
-			</div>
-			<div class="card-content" style="flex: 1; padding: 15px;">
-
-			</div>
-			<!-- Répétez la structure ci-dessus pour chaque avis -->
-		</div>
 		<div class="reviews-widget">
 			<script defer async src='https://cdn.trustindex.io/loader.js?4c124f332c21764d3b26451c5f6'></script>
 		</div>

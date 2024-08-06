@@ -12620,6 +12620,35 @@ h5,
   border: none;
 }
 
+/* Media queries pour les écrans de largeur maximale 768px */
+@media (max-width: 768px) {
+  .video-title {
+      font-size: 24px; /* Réduire la taille de la police du titre */
+      margin-bottom: 15px; /* Réduire la marge inférieure du titre */
+      line-height: 40px; /* Ajuster l'espacement des lignes du titre */
+  }
+
+  .video-container iframe {
+      height: 315px; /* Réduire la hauteur de l'iframe pour les petits écrans */
+  }
+}
+
+/* Media queries pour les écrans de largeur maximale 480px (smartphones très petits) */
+@media (max-width: 480px) {
+  .video-title {
+      font-size: 20px; /* Réduire davantage la taille de la police du titre */
+      margin-bottom: 10px; /* Réduire la marge inférieure du titre */
+      line-height: 30px; /* Ajuster l'espacement des lignes du titre */
+  }
+
+  .video-container iframe {
+      height: 200px; /* Réduire encore la hauteur de l'iframe pour les très petits écrans */
+  }
+}
+
+
+
+
 /** end vedios**/
 
 
@@ -15739,6 +15768,29 @@ font-size: 14px; /* Réduire la taille de la police */
 }
 
 /*** ed contat ***/
+
+/** section review **/
+/* Section des avis */
+.reviews-section {
+  background-color: #D1D8C5;
+  padding: 20px;
+}
+
+.reviews-title {
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Media queries pour les écrans de largeur maximale 768px */
+@media (max-width: 768px) {
+  .reviews-title {
+      font-size: 1.5rem; /* Réduire la taille de la police du titre sur mobile */
+      margin-bottom: 15px; /* Réduire la marge inférieure du titre */
+  }
+}
+
+/** end secrtion **/
 
 #ftco-loader {
   position: fixed;
