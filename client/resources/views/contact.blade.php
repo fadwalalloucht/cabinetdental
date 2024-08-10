@@ -1,103 +1,152 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
+<!DOCTYPE html>
+<html lang="fr">
 
 <head>
    @include('header')
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Include SweetAlert CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+   <!-- Include SweetAlert JavaScript -->
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <!-- Include jQuery -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
-   <!-- start banner Area -->
-   <section class="banner-area relative about-banner" id="home">
-      <div class="overlay overlay-bg"></div>
-      <div class="container">
-         <div class="row d-flex align-items-center justify-content-center">
-            <div class="about-content col-lg-12">
-               <h1 class="text-white">
-                  Contact nous
-               </h1>
-               <p class="text-white link-nav"><a href="index.html">Acceuil </a> <span
-                     class="lnr lnr-arrow-right"></span> <a href="contact.html"> Contact </a></p>
-            </div>
-         </div>
+   <section class="contact-section">
+      <div class="contact-header">
+         <h2>Contactez-Nous à Tout Moment <br>Nous Sommes Disponibles 24h/7j</h2>
+         <p>Vous avez besoin d'aide ou de renseignements supplémentaires ?<br> Notre équipe disponible est prête à
+            répondre à toutes vos questions. N'hésitez pas à nous contacter dès maintenant !</p>
       </div>
-   </section>
-   <!-- End banner Area -->
 
-   <!-- Start contact-page Area -->
-   <section class="contact-page-area section-gap">
-      <div class="container">
-         <div class="row">
-            <iframe class="map-wrap" style="width:100%; height: 445px;"
-               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.594389185703!2d-5.798149124698097!3d35.76077302560114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b812292c7993b%3A0xdf45bc0d9a4a0f20!2sCentre%20Dentaire%20Dr.%20Asmae%20El%20Bakkali%20Ettaheri!5e0!3m2!1sen!2sma!4v1719016442370!5m2!1sen!2sma"
-               width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-               referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-            <div class="col-lg-4 d-flex flex-column address-wrap">
-               <div class="single-contact-address d-flex flex-row">
-                  <div class="icon">
-                     <span class="lnr lnr-home"></span>
+      <div class="contact-content">
+         <div class="contact-form">
+            <h3>Laissez-nous un message</h3>
+            <p>Nous sommes là pour répondre à toutes vos questions. Remplissez le formulaire ci-dessous, et nous vous
+               contacterons rapidement.</p>
+            <form id=contactForm>
+               <label for="name">Entrez votre nom complet</label>
+               <input type="text" id="name" name="name" required>
+
+               <label for="phone">Entrez votre numéro de téléphone</label>
+               <input type="tel" id="phone" name="phone" required>
+
+               <label for="email">Entrez votre adresse e-mail</label>
+               <input type="email" id="email" name="email" required>
+
+               <label for="message">Saisissez votre message ici</label>
+               <textarea id="message" name="message" rows="5" required></textarea>
+
+               <button type="submit">Envoyer</button>
+            </form>
+         </div>
+
+         <div class="contact-content">
+            <div class="contact-details">
+               <div class="contact-item">
+                  <div class="icon-container">
+                     <i class="fas fa-map-marker-alt"></i>
                   </div>
-                  <div class="contact-details">
-                     <h5>Plaza Toro Rue Rgayae Qrt.Drawa Tanger</h5>
-                     <p>
-                        En face pharmacie place des arènes
+                  <div class="contact-text">
+                     <h4>Adresse</h4>
+                     <p>Plaza Toro rue rgayae Qtr.Drawa(Tanger)</p>
+                  </div>
+               </div>
+               <div class="contact-item">
+                  <div class="icon-container">
+                     <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <div class="contact-text">
+                     <h4>Appelez-nous</h4>
+                     <p>05.39.35.67.84
                      </p>
+                     <p>06.66.600.755</p>
                   </div>
                </div>
-               <div class="single-contact-address d-flex flex-row">
-                  <div class="icon">
-                     <span class="lnr lnr-phone-handset"></span>
+               <div class="contact-item">
+                  <div class="icon-container">
+                     <i class="fas fa-envelope"></i>
                   </div>
-                  <div class="contact-details">
-                     <h5>06.66.600.755</h5>
-                     <h5>05.39.35.67.84</h5>
-                     <p>Lundi à Vendredi 9:00 to 20:00</p>
-                  </div>
-               </div>
-               <div class="single-contact-address d-flex flex-row">
-                  <div class="icon">
-                     <span class="lnr lnr-envelope"></span>
-                  </div>
-                  <div class="contact-details">
-                     <h5>support@colorlib.com</h5>
-                     <p>Envoyer un message!</p>
+                  <div class="contact-text">
+                     <h4>Email</h4>
+                     <p>drasmaebakkali@hotmail.com</p>
                   </div>
                </div>
             </div>
-            <div class="col-lg-8">
-               <form class="form-area " id="myForm" action="mail.php" method="post" class="contact-form text-right">
-                  <div class="row">
-                     <div class="col-lg-6 form-group">
-                        <input name="name" placeholder="Nom & Prénom" onfocus="this.placeholder = ''"
-                           onblur="this.placeholder = 'Enter your name'" class="common-input mb-20 form-control"
-                           required="" type="text">
 
-                        <input name="email" placeholder="Adress Email"
-                           pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''"
-                           onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control"
-                           required="" type="email">
+            <div class="contact-social">
+               <h3>Restons Connectés</h3>
+               <p>Découvrez notre emplacement, suivez-nous sur les réseaux sociaux et consultez nos heures d'ouverture. Restons en contact!</p>
+               
+               <div class="opening-hours">
+                  <h4>Horaires d'Ouverture</h4>
+                  <p>Lundi - Vendredi: 09h00 à 20h00</p>
+                  <p>Samedi: 09h00 à 14h00</p>
+              </div>
 
-                        <input name="subject" placeholder="Sujet" onfocus="this.placeholder = ''"
-                           onblur="this.placeholder = 'Enter subject'" class="common-input mb-20 form-control"
-                           required="" type="text">
-                     </div>
-                     <div class="col-lg-6 form-group">
-                        <textarea class="common-textarea form-control" name="message" placeholder="Message"
-                           onfocus="this.placeholder = ''" onblur="this.placeholder = 'Message'" required=""></textarea>
-                     </div>
-                     <div class="col-lg-12">
-                        <div class="alert-msg" style="text-align: left;"></div>
-                        <button class="genric-btn primary circle" style="float: right;">Envoyer message</button>
-                     </div>
-                  </div>
-               </form>
-            </div>
+
+               <div class="social-links">
+                   <a href="https://www.facebook.com/profile.php?id=100087385364699&mibextid=LQQJ4d" target="_blank" class="social-item">
+                       <i class="fab fa-facebook-f"></i>
+                       <span>Facebook</span>
+                   </a>
+                   <a href="https://www.google.com/maps/place/Centre+Dentaire+Dr.+Asmae+El+Bakkali+Ettaheri/@35.7607687,-5.7955742,15z/data=!4m6!3m5!1s0xd0b812292c7993b:0xdf45bc0d9a4a0f20!8m2!3d35.7607687!4d-5.7955742!16s%2Fg%2F11tt2k3dh2?hl=fr-ma&entry=ttu" target="_blank" class="social-item">
+                       <i class="fab fa-google"></i>
+                       <span>Google</span>
+                   </a>
+                   <a href="https://www.instagram.com/drasmaebakkali" target="_blank" class="social-item">
+                       <i class="fab fa-instagram"></i>
+                       <span>Instagram</span>
+                   </a>
+               </div>
+           
+               
+           </div>
+           
          </div>
-      </div>
+
    </section>
-   <!-- End contact-page Area -->
-   <br>
+
+
+   @include('footer')
+
+   <script>
+      $(document).ready(function() {
+         $('#contactForm').on('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            $.ajax({
+               url: 'http://localhost:8081/contact',
+               type: 'POST',
+               data: $(this).serialize(), // Serialize form data
+               headers: {
+                  'X-Requested-With': 'XMLHttpRequest',
+                  'X-CSRF-TOKEN': $('input[name="_token"]').val()
+               },
+               success: function(data) {
+                  console.log('Success response:', data); // Log response for debugging
+                  Swal.fire({
+                     icon: 'success',
+                     title: 'Succès!',
+                     text: data.message || 'Votre message a été envoyé avec succès',
+                     confirmButtonText: 'OK'
+                  });
+                  $('#contactForm')[0].reset(); // Reset the form fields
+               },
+               error: function(xhr) {
+                  console.error('There was a problem with the AJAX request:', xhr);
+                  Swal.fire({
+                     icon: 'error',
+                     title: 'Erreur!',
+                     text: 'Une erreur est survenue. Veuillez réessayer.',
+                     confirmButtonText: 'OK'
+                  });
+               }
+            });
+         });
+      });
+   </script>
 </body>
-@include('footer')
 
 </html>

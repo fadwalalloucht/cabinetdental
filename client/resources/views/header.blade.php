@@ -1,188 +1,91 @@
-<!DOCTYPE html>
-<html lang="zxx" class="no-js">
-
 <head>
-	<!-- Mobile Specific Meta -->
+	<title>Dr. Asmae El Bakkali Ettaheri</title>
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- Favicon-->
-	<link rel="shortcut icon" href="img/fav.png">
-	<!-- Author Meta -->
-	<meta name="author" content="colorlib">
-	<!-- Meta Description -->
-	<meta name="description" content="">
-	<!-- Meta Keyword -->
-	<meta name="keywords" content="">
-	<!-- meta character set -->
-	<meta charset="UTF-8">
-	<!-- Site Title -->
-	<title>Dentist</title>
-	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:
-	ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900
-	;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-	<!--
-			CSS
-			============================================= -->
-	<link rel="stylesheet" href="css/linearicons.css">
-	{{--
-	<link rel="stylesheet" href="css/font-awesome.min.css"> --}}
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="icon" href="img/logo.png" type="image/x-icon">
+
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
-	<link rel="stylesheet" href="css/nice-select.css">
-	<link rel="stylesheet" href="css/animate.min.css">
-	<link rel="stylesheet" href="css/jquery-ui.css">
-	<link rel="stylesheet" href="css/owl.carousel.css">
-	<link rel="stylesheet" href="css/main.css">
 
-	<style>
-		 body {
-            margin: 0;
-            font-family: Poppins;
-        }
+	<link rel="stylesheet" href="css/aos.css">
 
-        .info-bar {
-            background-color: #4A919E;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            font-size: 14px;
-				font-family: "Yeseva One";
-        }
+	<link rel="stylesheet" href="css/ionicons.min.css">
 
-        .info-bar .left-section,
-        .info-bar .right-section {
-            display: flex;
-            align-items: center;
-        }
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="css/jquery.timepicker.css">
 
-        .info-bar .left-section i,
-        .info-bar .right-section i {
-            margin-right: 8px;
-        }
 
-        .info-bar .right-section a {
-            color: #d4af37;
-            margin-left: 15px;
-            text-decoration: none;
-            font-size: 28px;
-        }
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-        .info-bar .right-section a:hover {
-            color: #fff;
-        }
 
-        .social-icon,
-        .icons {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            /* width: 35px; */
-            /* height: 35px; */
-            border-radius: 50%;
-            background-color: transparent;
-            color: #000;
-				/* border-width: 1px 1px 1px 1px */
-            text-decoration: none;
-            transition: background-color 0.3s, color 0.3s, border 0.3s;
-            border: 2px solid #d4af37; /* Yellow border
-            font-size: 24px; Adjusted to fit icon size */
-        }
-        .social-icon:hover,
-        .icons:hover {
-            background-color: #d4af37; /* Yellow background on hover */
-            color: #000; /* Icon color on hover */
-        }
-    </style>
-	</style>
-
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
-
 <body>
-	<header id="header" id="home">
 
-		<div class="info-bar">
-			<div class="left-section">
-				<span>Vous avez des questions ?</span>
-				<i class="fa fa-phone" style="margin-left: 20px;"></i>
-				<span>05.39.35.67.84</span>
-				<i class="lnr lnr-map-marker" style="margin-left: 20px;"></i>
-				<span> Plaza Toro Rue Regayae Quartier Drawa (en face de la pharmacie Place des Arènes), Tanger</span>
-			</div>
-			<div class="right-section">
-				<a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
-				<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-f"></i></a>
-				<a href="https://www.linkedin.com" target="_blank"><i class="fa fa-google"></i></a>
-			</div>
-		</div>
-
-
-		<div class="header-top">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-lg-6 col-sm-6 col-4 header-top-left no-padding">
-						<a href="index.html"><img src="img/size.jpg" alt="" title="" /></a>
-						{{-- <a href="index.html"><img src="img/logocabinet.png" alt="" title="" /></a> --}}
-
+   <header>
+		<div class="container-header">
+			{{-- <div class="logo">
+				<img src="img/logo.png" alt="Logo" class="logo-image">
+			</div> --}}
+			<div class="contact-info">
+				<div class="address">
+					<i class="fas fa-map-marker-alt"></i>
+					<span>Plaza Toro rue rgayae Qtr.Drawa(Tanger)</span>
+				</div>
+				<div class="phone-numbers">
+					<div class="phone-item">
+						<i class="fas fa-phone"></i>
+						<span class="phone">06.66.600.755</span>
 					</div>
-
-
-					<div class="col-lg-6 col-sm-6 col-8 header-top-right">
-						<a class="social-icon fa fa-instagram" href="#" style="font-size: 24px;"></a>
-						<a class="social-icon fa fa-facebook" href="#" style="font-size: 24px;"></a>
-						<a class="social-icon fa fa-google" href="#" style="font-size: 24px;"></a>
-						<a class="icons" href="https://wa.me/212666600755">
-							 <span class="lnr lnr-phone-handset"></span>
-						</a>
-						<a class="icons" href="mailto:support@colorlib.com">
-							 <span class="lnr lnr-envelope"></span>
-						</a>
-				  </div>
-			 </div>
-		</div>
-				  
-
+					<div class="phone-item">
+						<i class="fas fa-phone"></i>
+						<span class="phone">05.39.35.67.84</span>
+					</div>
 				</div>
 			</div>
-		</div>
-
-
-
-
-
-
-		<div class="container main-menu">
-			<div class="row align-items-center justify-content-between d-flex">
-				<nav id="nav-menu-container">
-					<ul class="nav-menu">
-						<li class="menu-active"><a href="{{ route('home') }}">Acceuil</a></li>
-						<li><a href="{{route('about')}}"> À propos</a></li>
-						<li><a href="{{route('service')}}">Services</a></li>
-						<li><a href="opening-hour.html">Heures d'ouverture</a></li>
-						<li><a href="{{route('contact')}}">Contact</a></li>
-					</ul>
-				</nav><!-- #nav-menu-container -->
+			<div class="social-icons">
+				<a href="https://www.google.com/maps/place/Centre+Dentaire+Dr.+Asmae+El+Bakkali+Ettaheri/@35.7607687,-5.7955742,15z/data=!4m6!3m5!1s0xd0b812292c7993b:0xdf45bc0d9a4a0f20!8m2!3d35.7607687!4d-5.7955742!16s%2Fg%2F11tt2k3dh2?hl=fr-ma&entry=ttu" target="_blank" class="icon"><i class="fab fa-google"></i></a>
+				<a href="https://www.instagram.com/drasmaebakkali" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+				<a href="https://www.facebook.com/profile.php?id=100087385364699&mibextid=LQQJ4d" target="_blank" class="icon"><i class="fab fa-facebook-f"></i></a>
 			</div>
 		</div>
-	</header><!-- #header -->
-	<script src="js/vendor/jquery-2.2.4.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-	</script>
-	<script src="js/vendor/bootstrap.min.js"></script>
-	<script type="text/javascript"
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-	<script src="js/easing.min.js"></script>
-	<script src="js/hoverIntent.js"></script>
-	<script src="js/superfish.min.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/jquery-ui.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.nice-select.min.js"></script>
-	<script src="js/mail-script.js"></script>
-	<script src="js/main.js"></script>
-</body>
+	</header>
 
-</html>
+
+	
+
+
+
+
+
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html"> <img class="logo" src="img/logo.png" alt="Logo" /></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active"><a href="/" class="nav-link">ACCEUIL</a></li>
+					<li class="nav-item"><a href="/apropos" class="nav-link">A PROPOS</a></li>
+					<li class="nav-item"><a href="/services" class="nav-link">SERVICES</a></li>
+					<li class="nav-item"><a href="/contact" class="nav-link">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- END nav -->
