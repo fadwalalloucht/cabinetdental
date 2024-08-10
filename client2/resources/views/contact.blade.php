@@ -4,11 +4,15 @@
 <head>
    @include('header')
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Nos Services</title>
+   <!-- Include SweetAlert CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+   <!-- Include SweetAlert JavaScript -->
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <!-- Include jQuery -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
-
    <section class="contact-section">
       <div class="contact-header">
          <h2>Contactez-Nous à Tout Moment <br>Nous Sommes Disponibles 24h/7j</h2>
@@ -21,7 +25,7 @@
             <h3>Laissez-nous un message</h3>
             <p>Nous sommes là pour répondre à toutes vos questions. Remplissez le formulaire ci-dessous, et nous vous
                contacterons rapidement.</p>
-            <form action="#" method="post">
+            <form id=contactForm>
                <label for="name">Entrez votre nom complet</label>
                <input type="text" id="name" name="name" required>
 
@@ -104,8 +108,45 @@
 
    </section>
 
+
    @include('footer')
 
+   <script>
+      $(document).ready(function() {
+         $('#contactForm').on('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            $.ajax({
+               url: 'http://localhost:8081/contact',
+               type: 'POST',
+               data: $(this).serialize(), // Serialize form data
+               headers: {
+                  'X-Requested-With': 'XMLHttpRequest',
+                  'X-CSRF-TOKEN': $('input[name="_token"]').val()
+               },
+               success: function(data) {
+                  console.log('Success response:', data); // Log response for debugging
+                  Swal.fire({
+                     icon: 'success',
+                     title: 'Succès!',
+                     text: data.message || 'Votre message a été envoyé avec succès',
+                     confirmButtonText: 'OK'
+                  });
+                  $('#contactForm')[0].reset(); // Reset the form fields
+               },
+               error: function(xhr) {
+                  console.error('There was a problem with the AJAX request:', xhr);
+                  Swal.fire({
+                     icon: 'error',
+                     title: 'Erreur!',
+                     text: 'Une erreur est survenue. Veuillez réessayer.',
+                     confirmButtonText: 'OK'
+                  });
+               }
+            });
+         });
+      });
+   </script>
 </body>
 
 </html>

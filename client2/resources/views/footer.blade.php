@@ -94,7 +94,7 @@
 
 					<p>
 						© Tous droits réservés – Dr. Asmae El Bakkali Ettaheri & Création Site Web: Par
-						<a href="https://www.lalloucht-fadwa.com" target="_blank">Lalloucht Fadwa</a>
+						<a href="https://www.linkedin.com/in/fadwa-lalloucht-055b43220/" target="_blank">Lalloucht Fadwa</a>
 						<i class="icon-heart" aria-hidden="true"></i>
 					</p>
 

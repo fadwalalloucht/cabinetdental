@@ -15,6 +15,24 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/test', function () {
+    return 'Test route works!';
+});
+
+Route::post('/test', function () {
+    return 'POST route works!';
+});
+
+Route::get('/test-cors', function () {
+    return response()->json(['message' => 'CORS is working!']);
+});
+
+Route::post('/contact', 'ContactController@handleForm');
+
+
+// Traiter le formulaire de contact
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -46,3 +64,6 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
     Route::delete('/delete-shift/{id}', 'Admin\ShiftController@deleteShift');
 
 });
+
+
+

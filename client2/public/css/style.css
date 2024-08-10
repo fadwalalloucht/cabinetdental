@@ -15792,6 +15792,82 @@ font-size: 14px; /* Réduire la taille de la police */
 
 /** end secrtion **/
 
+/**service**/
+
+main {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-content {
+  display: flex;
+  width: 100%;
+}
+
+.service-text {
+  flex: 1;
+  padding: 20px;
+  font-weight: 500;
+}
+
+.service-text h1 {
+  background: linear-gradient(to right, #0A0A0A -4%, #B48811 54%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.service-text h2 {
+  margin-top: 0;
+  background: linear-gradient(to right, #0A0A0A -4%, #B48811 54%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.service-text p {
+  color: #666;
+}
+
+.service-image {
+  flex: 1;
+}
+
+.service-image img {
+  max-width: 70%;
+  border-radius: 8px;
+  margin: 4em 0em 0em 8em
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+  .service-content {
+     flex-direction: column;
+  }
+
+  .service-image img {
+     max-width: 100%;
+     margin: 0em 0em 0em 0em
+  }
+}
+/** end service **/
+
 #ftco-loader {
   position: fixed;
   width: 96px;
