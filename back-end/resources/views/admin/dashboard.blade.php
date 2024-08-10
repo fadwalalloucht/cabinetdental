@@ -14,7 +14,7 @@ Dashboard
     </div>
 
   </div>
-  <div class="row">
+  {{-- <div class="row">
     <div class="col-sm-6 col-md-3">
       <div class="card card-stats card-round">
         <div class="card-body">
@@ -33,8 +33,8 @@ Dashboard
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-sm-6 col-md-3">
+    </div> --}}
+    {{-- <div class="col-sm-6 col-md-3">
       <div class="card card-stats card-round">
         <div class="card-body">
           <div class="row align-items-center">
@@ -52,8 +52,8 @@ Dashboard
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-sm-6 col-md-3">
+    </div> --}}
+    {{-- <div class="col-sm-6 col-md-3">
       <div class="card card-stats card-round">
         <div class="card-body">
           <div class="row align-items-center">
@@ -71,8 +71,8 @@ Dashboard
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-sm-6 col-md-3">
+    </div> --}}
+    <div class="col-sm-6 col-md-12">
       <div class="card card-stats card-round">
         <div class="card-body">
           <div class="row align-items-center">
@@ -83,8 +83,69 @@ Dashboard
             </div>
             <div class="col col-stats ms-3 ms-sm-0">
               <div class="numbers">
-                <p class="card-category">Order</p>
-                <h4 class="card-title">576</h4>
+                <p class="card-category">Contacts</p>
+                <h4 class="card-title"></h4>
+                <a href="/contacts/export" class="btn btn-export">
+                  <i class="fa fa-download"></i> Export
+                </a>
+                <style>
+                  .btn-export {
+                    border-radius: 0;
+                    /* No border radius */
+                    background-color: transparent;
+                    /* Transparent background */
+                    color: #28a745;
+                    /* Button text color */
+                    border: 1px solid #28a745;
+                    /* Border color */
+                    transition: background-color 0.3s, color 0.3s;
+                    /* Smooth transition for hover effect */
+                    padding: 5px 15px;
+                    /* Adjust padding as needed */
+                    text-decoration: none;
+                    /* Remove underline */
+                    margin: -4em 0em 0em 70em;
+                    /* Positioning */
+                  }
+
+                  .btn-export:hover,
+                  .btn-export:focus {
+                    background-color: #28a745;
+                    /* Background color on hover */
+                    color: white;
+                    /* Text color on hover */
+                    text-decoration: none;
+                    /* Remove underline on hover */
+                  }
+
+                  .btn-export i {
+                    margin-right: 5px;
+                    /* Space between icon and text */
+                  }
+
+                  /* Media Query for tablets and smaller screens */
+                  @media (max-width: 768px) {
+                    .btn-export {
+                      margin: -2em 0em 0em 1em;
+                      /* Adjust margin for smaller screens */
+                      padding: 4px 10px;
+                      /* Adjust padding */
+                    }
+                  }
+
+                  /* Media Query for mobile devices */
+                  @media (max-width: 576px) {
+                    .btn-export {
+                      margin: -1em 0em 0em 0em;
+                      /* Adjust margin for mobile screens */
+                      padding: 3px 8px;
+                      /* Adjust padding */
+                      font-size: 0.8em;
+                      /* Adjust font size */
+                    }
+                  }
+                </style>
+
               </div>
             </div>
           </div>
@@ -92,12 +153,12 @@ Dashboard
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-8">
+  <div class="row" style="margin: 0em 5em 0em 5em">
+    <div class="col-sm-6 col-md-12">
       <div class="card card-round">
-        <div class="card-header">
-          <div class="card-head-row">
-            <div class="card-title">User Statistics</div>
+        {{-- <div class="card-header"> --}}
+          {{-- <div class="card-head-row"> --}}
+            {{-- <div class="card-title">User Statistics</div> --}}
             {{-- <div class="card-tools">
               <a href="#" class="btn btn-label-success btn-round btn-sm me-2">
                 <span class="btn-label">
@@ -115,15 +176,16 @@ Dashboard
             --}}
           </div>
         </div>
-        <div class="card-body">
+        {{-- <div class="card-body">
           <div class="chart-container" style="min-height: 375px">
             <canvas id="statisticsChart"></canvas>
           </div>
           <div id="myChartLegend"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
+        </div> --}}
+        {{-- </div> --}}
+      {{--
+    </div> --}}
+    <div class="col-sm-6 col-md-12">
       <div class="card card-primary card-round">
         <div class="card-header">
           <div class="card-head-row">
@@ -168,7 +230,7 @@ Dashboard
           </div> --}}
         </div>
       </div>
-      <div class="card card-round">
+      {{-- <div class="card card-round">
         <div class="card-body pb-0">
           <div class="h1 fw-bold float-end text-primary">+5%</div>
           <h2 class="mb-2">17</h2>
@@ -177,7 +239,7 @@ Dashboard
             <div id="lineChart"></div>
           </div>
         </div>
-      </div>
+      </div> --}}
     </div>
   </div>
   <div class="row">

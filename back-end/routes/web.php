@@ -12,22 +12,13 @@
  */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/test', function () {
-    return 'Test route works!';
-});
-
-Route::post('/test', function () {
-    return 'POST route works!';
-});
-
-Route::get('/test-cors', function () {
-    return response()->json(['message' => 'CORS is working!']);
+    return view('auth/login');
 });
 
 Route::post('/contact', 'ContactController@handleForm');
+
+
+
 
 
 // Traiter le formulaire de contact
@@ -62,6 +53,11 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
     Route::get('/shift-edit/{id}', 'Admin\ShiftController@editShift');
     Route::put('/update-shift/{id}', 'Admin\ShiftController@updateShift');
     Route::delete('/delete-shift/{id}', 'Admin\ShiftController@deleteShift');
+       /** For Contact */
+   Route::get('/allcontact', 'ContactController@listContact');
+   Route::get('/contacts/export', 'ContactController@exportContacts');
+
+ 
 
 });
 

@@ -143,14 +143,14 @@
             <li class="nav-item">
               <a data-bs-toggle="collapse" href="#tables">
                 <i class="fas fa-table"></i>
-                <p>Tables</p>
+                <p>Contacts</p>
                 <span class="caret"></span>
               </a>
               <div class="collapse" id="tables">
                 <ul class="nav nav-collapse">
                   <li>
-                    <a href="">
-                      <span class="sub-item">Liste horaires</span>
+                    <a href="/allcontact">
+                      <span class="sub-item">Liste contacts</span>
                     </a>
                   </li>
                 </ul>
@@ -259,10 +259,6 @@
         <nav class="pull-left">
           
         </nav>
-        <div class="copyright">
-          2024, made with <i class="fa fa-heart heart text-danger"></i> by
-          <a href="">@FadwaLalloucht</a>
-        </div>
       </div>
     </footer>
   </div>
@@ -324,9 +320,9 @@
         </div>
       </div>
     </div>
-    <div class="custom-toggle">
+    {{-- <div class="custom-toggle">
       <i class="icon-settings"></i>
-    </div>
+    </div> --}}
   </div>
   <!-- End Custom template -->
   </div>
